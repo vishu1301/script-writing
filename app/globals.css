@@ -1,4 +1,20 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-screenplay: "Courier Prime", "Courier New", monospace;
+
+  --spacing-screenplay-margin-left: 1.5in;
+  --spacing-screenplay-margin-right: 1in;
+  --spacing-screenplay-margin-top: 1in;
+  --spacing-screenplay-margin-bottom: 1in;
+  --spacing-character-indent: 3.7in;
+  --spacing-dialogue-indent: 2.5in;
+  --spacing-parenthetical-indent: 3.1in;
+
+  --text-screenplay: 12pt;
+  --leading-screenplay: 1.2;
+}
 
 :root {
   --background: #ffffff;
@@ -17,10 +33,4 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

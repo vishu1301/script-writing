@@ -1,0 +1,91 @@
+/* styles/editor-canvas-style.css */
+
+/* Page + sheet */
+.canvas-page {
+  background: #f7fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.canvas-sheet {
+  width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+  padding: 1in 1in 1in 1.5in; /* Standard script margins */
+  box-sizing: border-box;
+  font-family: "Courier Prime", "Courier New", monospace;
+  font-size: 12pt;
+  line-height: 1.5;
+}
+
+/* Editable line base */
+.editable-line {
+  outline: none;
+  padding: 8px 12px;
+  min-height: 28px;
+  transition: all 0.15s ease;
+  cursor: text;
+  white-space: pre-wrap; /* Allows soft line breaks (\n) */
+  word-break: break-word;
+  margin: 0;
+  border-radius: 4px;
+}
+
+/* Focus background */
+.editable-line:focus {
+  background-color: #f9fafb;
+}
+
+/* Specific types */
+.scene-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  background: #eff8ff; /* Light blue background for emphasis */
+}
+
+.action {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.character {
+  text-transform: uppercase;
+  font-size: 0.95em;
+  margin-left: 3.7in;
+  max-width: 2in;
+  margin-top: 1em;
+  margin-bottom: 0;
+  background: #ecfdf5; /* Light green background */
+}
+
+.dialogue {
+  margin-left: 2.5in;
+  margin-right: 1.5in;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.parenthetical {
+  font-style: italic;
+  margin-left: 3.1in;
+  margin-right: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #6b7280;
+}
+
+.transition {
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background: #f5f3ff; /* Light purple background */
+}
